@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Management System</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Product Management System</h2>
+    <form id="productForm" class="container mt-4">
+      <div class="row">
+        <div class="col-md-6 mb-2">
+          <input
+            type="text"
+            id="productName"
+            class="form-control mb-2"
+            placeholder="Product Name"
+          />
+          <input
+            type="number"
+            id="productPrice"
+            class="form-control mb-2"
+            placeholder="Price"
+          />
+          <input
+            type="text"
+            id="productCategory"
+            class="form-control mb-2"
+            placeholder="Category"
+          />
+          <input
+            type="number"
+            id="productQuantity"
+            class="form-control mb-2"
+            placeholder="Quantity"
+          />
+          <button type="submit" class="btn btn-primary">Add Product</button>
+        </div>
+      </div>
+    </form>
+    <div class="container mt-4">
+      <div class="row mb-3">
+        <div class="col-md-8 mb-2">
+          <input
+            type="search"
+            id="searchInput"
+            class="form-control"
+            placeholder="Search product..."
+          />
+          </div>
+          <div class="col-md-4 mb-2">
+<select id="categoryFilter" class="form-select">
+            <option value="all">All</option>
+            <option value="Computer">Computer</option>
+            <option value="Phone">Phone</option>
+            <option value="Accessory">Accessory</option>
+          </select>
+          </div>
+          
+        </div>
+      </div>
+    <div class="table-responsive">
+      <table class="table table-bordered table-striped table-hover text-center">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Product</th>
+            <th>Price($)</th>
+            <th>Category</th>
+            <th>Quantity</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="productList"></tbody>
+      </table>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
