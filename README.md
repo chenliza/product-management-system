@@ -1,7 +1,11 @@
-# Product Management System
+## Product Management System
 
 A simple Product Management System built with HTML, CSS, Bootstrap, and JavaScript.
-
+## Project Preview
+### Desktop
+![Product Management System](screenshots/desktop.png)
+### Mobile
+![Product Management Mobile](screenshots/mobile.png)
 ## Features
 
 - Add Product
